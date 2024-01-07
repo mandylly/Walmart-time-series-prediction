@@ -39,3 +39,13 @@ Using a step size of 7 as an example, our model training and prediction process 
 
 ![LightGBM Flow Chart](lightgbm_flow_chart.png)
 
+## Model Results and Selection
+During the training process of the two distinct main models, Root Mean Squared Error (RMSE) was employed as the performance metric. This choice was made due to uncertainties regarding the specific scaler for each prediction in calculating Root Mean Squared Scaled Error (RMSSE). However, for the comparative analysis of various modeling methods, we utilized the Weighted Root Mean Squared Scaled Error (WRMSSE) provided by each Kaggle submission.
+The top score for each model are as follow:
+| Algorithms | Top Private Score (WRMSSE) |
+|------------|----------------------------|
+| LightGBM   | 0.53199                    |
+| LSTM       | 0.6919                     |
+
+Based on the scores, we have chosen LightGBM with a step size of 2 as our final model.
+
