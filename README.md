@@ -8,6 +8,11 @@ Decompose the time series into its components of trend and seasonality. This hel
 2. Model Selection Strategy
 Explore models including LightGBM and LSTM networks for dealing with more intricate relationships within the data. In addition, we consider creating an ensemble of multiple models to ensure more consistent performance across various scenarios.
 (Given the better performance of LightGBM, I've exclusively included the LightGBM solution here.)
+## Data Introduction
+The hierarchical dataset involves the unit sales of 3,049 products, classified in 3 product categories (Hobbies, Foods, and Household) and 7 product departments. The products are sold across ten stores, located in three States (CA, TX, and WI). The historical data range from 2011-01-29 to 2016-06-19. Three datasets are used in the project:
+1. calendar.csv
+2. sell_prices.csv
+3. sales_train.csv
 
 ## LightGBM (Light Gradient-Boosting Machine)
 ### Methodology
